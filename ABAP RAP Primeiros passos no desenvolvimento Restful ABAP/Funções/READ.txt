@@ -1,0 +1,10 @@
+
+  METHOD read.
+
+    SELECT *
+    FROM ztanimal_x
+    FOR ALL ENTRIES IN @keys
+    WHERE id EQ @keys-id
+    INTO CORRESPONDING FIELDS OF TABLE @result.
+
+  ENDMETHOD.

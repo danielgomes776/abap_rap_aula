@@ -1,0 +1,13 @@
+unmanaged implementation in class zbp_i_animal_x unique;
+strict ( 1 );
+
+define behavior for ZI_ANIMAL_X alias Animal
+
+lock master
+authorization master ( instance )
+
+{
+  delete;
+  create;
+  field ( readonly ) Id;
+}

@@ -1,0 +1,2 @@
+ PUBLIC SECTION.
+    CLASS-DATA t_ztanimal_x TYPE STANDARD TABLE OF ztanimal_x.

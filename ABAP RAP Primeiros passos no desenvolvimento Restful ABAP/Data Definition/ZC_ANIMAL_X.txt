@@ -1,0 +1,11 @@
+@AccessControl.authorizationCheck: #CHECK
+@EndUserText.label: 'Projeção para animais'
+@Metadata.allowExtensions: true
+define root view entity ZC_ANIMAL_X as projection on ZI_ANIMAL_X as Animal
+{
+    key Id,
+    Nome,
+    Idade,
+    Especie,
+    Sexo
+}

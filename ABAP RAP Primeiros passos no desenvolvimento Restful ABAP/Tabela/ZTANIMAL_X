@@ -1,0 +1,15 @@
+@EndUserText.label : 'Tabela para animais'
+@AbapCatalog.enhancement.category : #NOT_EXTENSIBLE
+@AbapCatalog.tableCategory : #TRANSPARENT
+@AbapCatalog.deliveryClass : #A
+@AbapCatalog.dataMaintenance : #RESTRICTED
+define table ztanimal_x {
+
+  key client : mandt not null;
+  key id     : abap.char(50) not null;
+  nome       : abap.char(50) not null;
+  idade      : abap.int1 not null;
+  especie    : abap.char(30) not null;
+  sexo       : abap.char(1) not null;
+
+}

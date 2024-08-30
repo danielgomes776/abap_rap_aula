@@ -1,0 +1,17 @@
+METHOD create.
+
+    IF entities IS NOT INITIAL.
+        SELECT SINGLE MAX( id ) FROM ztanimal_x INTO @DATA(lv_max_id).
+
+        LOOP AT entities INTO DATA(ls_entity).
+            lv_max_id += 1.
+            ls_entity-%data-id = lv_max_id.
+            INSERT CORRESPONDING #( ls_entity-%data ) INTO TABLE t_ztanimal_x.
+        ENDLOOP.
+
+    ENDIF.
+
+  ENDMETHOD.
+  
+  
+  

@@ -1,0 +1,16 @@
+@AccessControl.authorizationCheck: #CHECK
+@EndUserText.label: 'Data defintion para animais'
+define root view entity ZI_ANIMAL_X as select from ztanimal_x as Animal
+{
+    @EndUserText.label: 'ID'
+    key id as Id,
+    @EndUserText.label: 'Nome'
+    nome as Nome,
+    @EndUserText.label: 'Idade'
+    idade as Idade,
+    @EndUserText.label: 'Espécie'
+    especie as Especie,
+    @EndUserText.label: 'Sexo'
+    sexo as Sexo
+
+}

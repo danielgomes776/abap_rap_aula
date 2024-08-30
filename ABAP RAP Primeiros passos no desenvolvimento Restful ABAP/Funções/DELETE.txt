@@ -1,0 +1,8 @@
+METHOD delete.
+
+     LOOP AT keys INTO DATA(ls_key).
+        DELETE FROM ztanimal_x
+        WHERE id = @ls_key-id.
+     ENDLOOP.
+
+  ENDMETHOD.

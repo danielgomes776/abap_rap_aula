@@ -1,0 +1,39 @@
+@Metadata.layer: #CUSTOMER
+@UI.headerInfo: { typeNamePlural: 'Animais',
+                  typeName: 'Animal',
+                  title: { type: #STANDARD, value: 'Nome'},
+                  description: { type: #STANDARD, value: 'Id' }
+                }
+
+annotate view ZC_ANIMAL_X with
+{
+  @UI.facet: [{label: 'Detalhes - Animal',
+               id: 'InfoGeral',
+               type: #IDENTIFICATION_REFERENCE,
+               purpose: #STANDARD }]
+
+  @UI.lineItem: [{position: 10 }]
+  @UI.identification: [{position:10, label: 'Id do Animal' }]
+  @UI.selectionField:[{ position: 10 }]
+  Id;
+
+  @UI.lineItem: [{position: 20 }]
+  @UI.identification: [{position:20, label: 'Nome' }]
+  @UI.selectionField:[{ position: 20 }]
+  Nome;
+
+  @UI.lineItem: [{position: 30 }]
+  @UI.identification: [{position:30, label: 'Idade' }]
+  @UI.selectionField:[{ position: 30 }]
+  Idade;
+
+  @UI.lineItem: [{position: 40 }]
+  @UI.identification: [{position:40, label: 'Espécie' }]
+  @UI.selectionField:[{ position: 40 }]
+  Especie;
+
+  @UI.lineItem: [{position: 50 }]
+  @UI.identification: [{position:50, label: 'Sexo' }]
+  @UI.selectionField:[{ position: 50 }]
+  Sexo;
+}

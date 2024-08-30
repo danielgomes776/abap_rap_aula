@@ -1,0 +1,5 @@
+METHOD save.
+
+    INSERT ztanimal_x FROM TABLE @lhc_animal=>t_ztanimal_x.
+
+  ENDMETHOD.
